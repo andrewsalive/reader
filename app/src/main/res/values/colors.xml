@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="purple_heart">#542CA7</color>
+    <color name="french_lilac">#7F7493</color>
+    <color name="manatee_40">#66979797</color>
+
+    <color name="black_50">#80000000</color>
+    <color name="white_20">#33FFFFFF</color>
+
+
+</resources>

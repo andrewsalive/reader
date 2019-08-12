@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/errorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80180C2F"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="gone">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/default_margin_x2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/default_margin_x2" />
+
+    <ImageView
+        android:id="@+id/imvError"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/tvErrorTitle"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toRightOf="@+id/guide_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvErrorTitle"
+        style="@style/TextField.Bold"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvErrorDescription"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toRightOf="@+id/guide_right"
+        app:layout_constraintTop_toBottomOf="@+id/imvError" />
+
+    <TextView
+        android:id="@+id/tvErrorDescription"
+        style="@style/TextField"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnErrorAction"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toRightOf="@+id/guide_right"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorTitle" />
+
+    <Button
+        android:id="@+id/btnErrorAction"
+        style="@style/Button.Dark"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/default_margin_x1.5"
+        android:text="@string/text_try_again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toRightOf="@+id/guide_right"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorDescription" />
+
+</android.support.constraint.ConstraintLayout>

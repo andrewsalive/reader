@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="default_margin_x0.5">8dp</dimen>
+    <dimen name="default_margin_x0.75">12dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_x1.5">24dp</dimen>
+    <dimen name="default_margin_x2">32dp</dimen>
+
+    <dimen name="button_height">48dp</dimen>
+
+</resources>

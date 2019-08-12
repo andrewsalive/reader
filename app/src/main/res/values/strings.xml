@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Reader</string>
+
+    <string name="connection_error">The internet connection is lost. Please try again</string>
+    <string name="timeout_error">Timeout error. Please, try again</string>
+    <string name="default_error">Something went wrong. Please try again.</string>
+
+    <string name="error_title_default">Error occurred</string>
+    <string name="no_posts">We don\'t have any posts</string>
+
+    <string name="text_try_again">Try again</string>
+    <string name="comments_count">Comments: %d</string>
+    <string name="user_id">User Id: %s</string>
+    <string name="post_id">Post Id: %s</string>
+
+    <string name="avatar">Avatar</string>
+
+</resources>

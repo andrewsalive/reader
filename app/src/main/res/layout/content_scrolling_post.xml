@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.com.reader.presentation.details.PostDetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_margin_x0.75">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:contentDescription="@string/avatar"
+            app:civ_border_color="@color/manatee_40"
+            app:civ_border_width="2dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvPostId"
+            style="@style/TextField.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_margin_x0.75"
+            android:paddingEnd="@dimen/default_margin_x0.75"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="Comments count" />
+
+        <TextView
+            android:id="@+id/tvUserId"
+            style="@style/TextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_margin_x0.75"
+            android:paddingTop="@dimen/default_margin_x0.75"
+            android:paddingEnd="@dimen/default_margin_x0.75"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/ivAvatar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivAvatar"
+            tools:text="User Name" />
+
+        <TextView
+            android:id="@+id/tvBody"
+            style="@style/TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_x0.75"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/ivAvatar"
+            tools:text="Body Text" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
